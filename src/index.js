@@ -1,11 +1,6 @@
-import React from "react";
-import {createRoot} from 'react-dom/client';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import Main from './components/Main.jsx';
+import './style.css';
 
-const BasicComponentNameHere = () => { return ( <div> <p>Hello World!</p> </div> ) }
-
-const appElement = document.getElementById("root");
-
-const root = createRoot(appElement);
-
-root.render(<BasicComponentNameHere />);
-
+createRoot(document.querySelector('#root')).render(<Main />);
